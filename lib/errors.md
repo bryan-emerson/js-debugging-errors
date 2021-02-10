@@ -256,8 +256,13 @@ person.greet();
 ```
 
 A. What is the error message?
-
+```js
+  instead of greeting with the name it greets with undefined undefined
+```
 B. What is causing the error?
+```js
+  this is not able to reach the proper scope from the confines of the function it is in
+```
 
 C. How can you resolve/fix the error?
 
@@ -267,9 +272,9 @@ let person = {
   lastName: "Seger",
   greet: function() {
     function fullName() {
-      return `${this.firstName} ${this.lastName}`;
+      return `${person.firstName} ${person.lastName}`;
     }
-
+    console.log(this.firstName)
     alert(fullName());
   }
 };
