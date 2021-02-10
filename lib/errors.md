@@ -15,10 +15,10 @@ alert(greeting);
 ```
 
 A. What is the error message?
-Uncaught ReferenceError: greeting is not defined
-    at script.js:3
+  Uncaught ReferenceError: greeting is not defined
+  at script.js:3
 B. What is causing the error?
-greeting is not defined
+  greeting is not defined
 C. How can you resolve/fix the error?
 
 ```js
@@ -41,9 +41,15 @@ birds.forEach(function(bird) {
 ```
 
 A. What is the error message?
+  ```js
+  SyntaxError: Unexpected end of input
 
+  script.js:10 Uncaught SyntaxError: missing ) after argument list
+  ```
 B. What is causing the error?
-
+  ```js
+  for the first error we need to add a curly bracket at the end and for the second we need to add a parenthases at the end. because the argument was a function
+  ```
 C. How can you resolve/fix the error?
 
 ```js
@@ -52,7 +58,8 @@ let birds = ['Eagle', 'Falcon', 'Duck', 'Turkey']
 birds.forEach(function(bird) {
   if (bird.length > 4) {
     console.log(bird)
-}
+  }
+});
 ```
 
 ### Prompt #3
