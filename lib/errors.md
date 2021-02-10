@@ -129,14 +129,22 @@ console.log(bob.name);
 ```
 
 A. What is the error message?
+  ```js
+    TypeError: Cannot read property 'name' of undefined
+    at
+  ```
 
 B. What is causing the error?
-
+  ```js
+    bob is not an object literal containing a value of "bob" at the key name
+  ```
 C. How can you resolve/fix the error?
 
 ```js
-var bob;
-console.log(bob.name);
+let obj = {
+  name: "bob"
+};
+console.log(obj.name);
 ```
 
 ### Prompt #6
