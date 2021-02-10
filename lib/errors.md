@@ -312,8 +312,14 @@ console.log(sequence)
 ```
 
 A. What is the error message?
+```js
+  SyntaxError: Identifier 'sequence' has already been declared
+```
 
 B. What is causing the error?
+```js
+  the closing curly bracket was not in place fior the function createSequence
+```
 
 C. How can you resolve/fix the error?
 
@@ -333,6 +339,7 @@ function createSequence( max ) {
   // }
   // }
   return sequence
+ }
 }
 
 let sequence = createSequence(20)
