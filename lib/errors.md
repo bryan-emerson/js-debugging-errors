@@ -159,14 +159,20 @@ working...
 ```
 
 A. What is the error message?
+```js
+  SyntaxError: Unexpected end of input
+```
 
 B. What is causing the error?
+```js
+  a missing back tick at the end of message
+```
 
 C. How can you resolve/fix the error?
 
 ```js
   let forSale = "sea shells"
-  let message = `She "sells' ${forSale} by \`sea' sea shore'
+  let message = `She "sells' ${forSale} by \`sea' sea shore'`
   console.log(message)
 ```
 
