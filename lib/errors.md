@@ -457,9 +457,14 @@ console.log(message);
 ```
 
 A. What is the error message?
+```js
+  TypeError: Cannot read property 'oompa' of undefined
+```
 
 B. What is causing the error?
-
+```js
+  the desired data is not being accessed correctly
+```
 C. How can you resolve/fix the error?
 
 ```js
@@ -479,6 +484,6 @@ let obj = {
   ]
 };
 
-let message = obj[0].oompa.loompa[0].doopati.do[2];
+let message = obj.oompa[0].loompa.doopati[0][0].do[0];
 console.log(message);
 ```
