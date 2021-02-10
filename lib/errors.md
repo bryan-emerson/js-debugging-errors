@@ -102,10 +102,17 @@ this.greet();
 **Hint:** What is `this` in the global scope in our browser?
 
 A. What is the error message?
-
+  ```js
+    TypeError: this.greet is not a function
+  ```
 B. What is causing the error?
-
+  ```js
+    the function call is being made in the global scope
+  ```
 C. How can you resolve/fix the error?
+```js
+  fix this by calling it in a local scope (inside of an object)
+```
 
 ```js
 this.greet();
