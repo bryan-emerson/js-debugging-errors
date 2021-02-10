@@ -385,10 +385,17 @@ console.log(Counter.total) // => value = 0
 ```
 
 A. What is the error message?
-
+```js
+  SyntaxError: Unexpected token '{'
+```
 B. What is causing the error?
-
+```js
+  the methods need to be inside the correct scope
+```
 C. How can you resolve/fix the error?
+```js
+  this can be fixed by placing the functions inside the object they reference
+```
 
 ```js
 const Counter = {
