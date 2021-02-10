@@ -74,16 +74,21 @@ console.log(greeting);
 ```
 
 A. What is the error message?
-
+  ```js
+  TypeError: greeting.push is not a function
+    at script.js:5
+  ```
 B. What is causing the error?
-
+  ```js
+  greeting.push is not a function
+  ```
 C. How can you resolve/fix the error?
 
-```js
-let greeting = "hello";
-greeting.push(" world");
-console.log(greeting);
-```
+   ```js
+   let greeting = "hello";
+   let string2 = " world";
+   console.log(greeting.concat(string2));
+   ```
 
 ### Prompt #4
 
