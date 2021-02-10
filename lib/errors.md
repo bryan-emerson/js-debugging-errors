@@ -202,8 +202,14 @@ console.log(bob.name.first_name);
 ```
 
 A. What is the error message?
+```js
+  TypeError: Cannot read property 'first_name' of undefined
+```
 
 B. What is causing the error?
+```js
+  the console.log was not called correctly to acces the desired information. adding a profile after bob and correcting the firstName key fix the issue
+```
 
 C. How can you resolve/fix the error?
 
@@ -224,7 +230,7 @@ const bob = {
   }
 };
 
-console.log(bob.name.first_name);
+console.log(bob.profile.name.firstName);
 ```
 
 ### Prompt #8
