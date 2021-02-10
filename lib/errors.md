@@ -15,12 +15,14 @@ alert(greeting);
 ```
 
 A. What is the error message?
-
+Uncaught ReferenceError: greeting is not defined
+    at script.js:3
 B. What is causing the error?
-
+greeting is not defined
 C. How can you resolve/fix the error?
 
 ```js
+greeting = "Hello World";
 alert(greeting);
 ```
 
