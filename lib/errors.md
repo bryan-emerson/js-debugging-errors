@@ -107,15 +107,18 @@ A. What is the error message?
   ```
 B. What is causing the error?
   ```js
-    the function call is being made in the global scope
+    the function call is being made in the global scope, but seems to be attached to an object. It needs to be in an object or it needs to lose the 'this'.
   ```
 C. How can you resolve/fix the error?
 ```js
-  fix this by calling it in a local scope (inside of an object)
+  I removed the "this", and defined the function
 ```
 
 ```js
-this.greet();
+function greet() {
+  console.log("WHATS UP BRO! THIS IS A GREETING BEING CALLED BY THE GREET FUNCTION I MADE")
+}
+greet();
 ```
 
 ### Prompt #5
@@ -318,7 +321,7 @@ A. What is the error message?
 
 B. What is causing the error?
 ```js
-  the closing curly bracket was not in place fior the function createSequence
+  the closing curly bracket was not in place for the function createSequence
 ```
 
 C. How can you resolve/fix the error?
@@ -452,7 +455,7 @@ let obj = {
   ]
 };
 
-let message = obj[0].oompa.loompa[0].doopati.do[2];
+let message = obj.oompa[0].loompa.doopati[0][0].do[1];
 console.log(message);
 ```
 
