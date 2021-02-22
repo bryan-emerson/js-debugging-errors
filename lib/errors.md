@@ -306,7 +306,7 @@ function createSequence( max ) {
   // while (i <= max) {
   //    var a = 1, b = 1
   // }
-  // }
+   }
   return sequence
 }
 
