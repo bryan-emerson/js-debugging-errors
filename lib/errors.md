@@ -487,6 +487,6 @@ let obj = {
   ]
 };
 
-let message = obj.oompa[0].loompa.doopati[0][0].do[0];
+let message = obj.oompa[0].loompa.doopati[0][0].do[1];
 console.log(message);
 ```
